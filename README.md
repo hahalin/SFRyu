@@ -13,7 +13,7 @@ Use javascript and css to build a StreetFighter Ryu , walk ,jump,basic punch kic
 2. 【空白鍵】=跳躍，搭配左右鍵可往前跳、往後跳。
 3. 【a】鍵=輕拳，【s】鍵=重拳。
 4. 【z】鍵=輕腳，【x】鍵=重腳。
-5. 【ctrl+a】鍵=發氣功，【ctrl+s】鍵=昇龍拳。
+5. 【ctrl+a】鍵=發氣功，【ctrl+q】鍵=昇龍拳。
 
 ## 圖片來源
  1. Ryu招式圖檔：<https://spritedatabase.net/>
