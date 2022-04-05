@@ -11,15 +11,16 @@ Use javascript and css to build a StreetFighter Ryu , walk ,jump,basic punch kic
  
 ## 操作方法
 
- 1.方向鍵的【左鍵】與【右鍵】可往前往後行走。
+ 1.方向鍵的【左】鍵與【右】鍵可往前往後行走，【下】鍵=蹲下。
  
- 2.【空白鍵】可跳躍，搭配左右鍵可往前跳、往後跳。
+ 2.【空白鍵】=跳躍，搭配左右鍵可往前跳、往後跳。
  
  3.【a】鍵=輕拳，【s】鍵=重拳。
  
- 4.【ctrl+a】鍵=發氣功，【ctrl+s】鍵=昇龍拳。
+ 4.【z】鍵=輕腳，【x】鍵=重腳。
  
- 5.【z】鍵=輕腳，【x】鍵=重腳。
+ 5.【ctrl+a】鍵=發氣功，【ctrl+s】鍵=昇龍拳。
+  
 
 https://user-images.githubusercontent.com/2748761/161832815-73bb2285-2f43-490a-95a8-3977e3453152.mp4
 
