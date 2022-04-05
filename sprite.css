@@ -1,0 +1,287 @@
+body{
+    /* position: relative; */
+    margin:0;
+}
+.stage
+{
+    padding:0;margin:0;
+    width:600px;
+    height:calc(600px*896/1773);
+    background-image: url("./img/bgRyu.jpg") ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    display:block;
+    position: relative;
+    border:0px dashed blue;
+    margin-right:0px;
+}
+
+#view {
+    overflow-x:hidden;
+    top:50px;left:50px;
+    padding:0;margin:0;
+    position: relative;
+    width:500px;
+    height:calc(600px*896/1773)+10px;
+    border:0px dashed darkred;
+}
+
+.ryu{
+    border:0px dashed red;
+    /* width:75px; */
+    height:110px;
+    margin:0;
+    left:50px;
+    display:block;
+    position:relative;
+    
+    /* background-image:url("./img/RyuCE.png");  */
+    background-image:url("./img/RyuSFA3.gif");
+    background-repeat:no-repeat;
+    background-position: -170px -2200px; 
+    width:65px;height:115px;
+}
+
+
+.ryu.ready {
+    width:75px;
+    animation: ready 1s steps(8) 1;
+}
+.ryu.idle {
+    width:75px;
+    height:110px;
+    animation: idle 0.8s steps(5) infinite;
+}
+
+.ryu.walkForward {
+    width:75px;
+    animation: walkForward .5s steps(6) infinite;   
+}
+
+.ryu.walkBack {
+    width:75px;
+    animation: walkBack .5s steps(6) infinite;   
+}
+
+.ryu.jumping{
+    width:75px;
+    animation: jumping .5s steps(7) infinite;   
+}
+
+.ryu.punch{
+    width:100px;
+    /* animation: punch 0.5s steps(3) infinite;    */
+    animation: punch 0.35s steps(1) 1;   
+}
+
+.ryu.punchM{
+    width:100px;
+    animation: punchM 0.5s steps(1) 1;   
+}
+.ryu.dragonPunch
+{
+    width:65px;
+    /* height:130px; */
+    animation: dragonPunch 0.6s steps(1) 1;   
+}
+
+
+.fireball{
+    border:0px dashed blue;
+    display:block;
+    width:60px;
+    height:70px;
+    display:block;
+    margin:0;
+    position:absolute; 
+    background-image:url("./img/RyuSFA3.gif");
+    background-repeat:no-repeat;
+    left:70px; bottom:20px;
+    margin-left:0; 
+    background-position: -20px -3150px;
+    transition:margin 8s linear; 
+    animation: fireball 0.15s steps(2) 1;
+    overflow-x:hidden;
+}
+
+.fireball::before{
+    left:25px;
+    right:25px;
+}
+.fireball.moving{
+   margin-left:4000px;
+}
+
+.fireball.explode{
+
+    animation: explode 0.15s steps(3) infinite; 
+}
+
+.ryu.kick{
+    width:85px;
+    animation: kick 0.5s steps(1) 1;   
+}
+
+.ryu.kickL{
+    width:85px;
+    animation: kickL 0.5s steps(1) 1;   
+}
+
+.ryu.skuat{
+    animation: skuat 0.5s steps(1) infinite;   
+}
+
+.ryu.hadoken {
+    width:120px;
+    animation: hadoken 0.6s steps(1) 1;   
+}
+
+@keyframes hadoken {
+    
+    /* from { background-position: -45px -1590px; }
+    to { background-position:  -465px -1590px; }  */
+    
+    
+    0% {
+        background-position: -45px -1590px;background-repeat: no-repeat;
+        width:90px;
+        
+    }
+    20% {
+        background-position: -135px -1580px; background-repeat: no-repeat;
+        width:100px;
+    }
+    40% {
+        background-position: -235px -1580px;background-repeat: no-repeat; 
+        width:100px;
+    }
+    65% {
+        background-position: -340px -1580px; background-repeat: no-repeat;
+        width:105px;
+    }
+    
+    80% {
+        background-position: -465px -1580px; background-repeat: no-repeat;
+        width:125px;
+    }
+
+    85% {
+        background-position: -465px -1580px; background-repeat: no-repeat;
+        width:125px;
+    }
+
+    90% {
+        background-position: -465px -1580px; background-repeat: no-repeat;
+        width:125px;
+    }
+
+    100% {
+        background-position: -465px -1590px; background-repeat: no-repeat;
+        width:125px;
+    }
+}
+
+@keyframes kick {
+    0% { background-position: -0px -925px;width:100px; }
+    15% { background-position: -100px -925px; width:75px; }
+    30% { background-position: -175px -925px; width:90px;}
+    45% { background-position: -265px -925px; width:75px;}
+    60% { background-position: -340px -925px; width:110px;}
+    75% { background-position: -340px -925px; width:110px;}
+    90% { background-position: -450px -925px; width:80px;}
+    to { background-position: -530px -925px; width:100px;} 
+}
+
+
+@keyframes kickL {
+    0% { background-position: -325px -1040px;width:80px; }
+    18% { background-position: -405px -1040px; width:75px; }
+    36% { background-position: -480px -1040px; width:95px;}
+    54% { background-position: -0px -1150px; width:120px; }
+    72% { background-position: -0px -1150px; width:120px; }
+    90% { background-position: -120px -1150px; width:90px; }
+    to { background-position: -230px -1150px;width:65px; }
+}
+
+@keyframes skuat{
+    from { background-position: -5px -560px; }
+     to { background-position:  -165px -810px; }
+}
+
+@keyframes punch {
+
+     0% { background-position: -305px -810px;width:95px; }
+     25% { background-position: -400px -810px; width:115px; }
+     50% { background-position: -400px -810px; width:115px; }
+     75% { background-position: -515px -810px; width:85px;}
+     100% { background-position: -305px -810px;width:95px; }
+ 
+}
+
+@keyframes punchM {
+
+    0% { background-position: -25px -810px;width:75px; }
+    18% { background-position: -100px -810px; width:85px; }
+    36% { background-position: -185px -810px; width:125px;}
+    72% { background-position: -185px -810px; width:125px;}
+    90% { background-position: -100px -810px; width:85px; }
+    to { background-position: -25px -810px;width:75px; }
+}
+
+
+@keyframes dragonPunch {
+
+    /* from { background-position: -10px -2175px; width:65px;height:130px;}
+    50% { background-position: -90px -2180px; width:65px;height:125px;}
+    75% { background-position: -170px -2200px; width:65px;height:105px; }
+    to { background-position:  -590px -115px;width:75px;height:110px; } */
+
+     0% { background-position: -375px -2035px;width:80px;height:135px; } 
+    16% { background-position: -455px -2035px; width:100px;height:135px; }
+    32% { background-position: -555px -2035px; width:70px;height:135px;}
+    48% { background-position: -555px -2035px; width:70px;height:135px;} 
+    64% { background-position: -10px -2175px; width:65px;height:135px;}
+    82% { background-position: -90px -2175px; width:65px;height:135px;}
+    95% { background-position: -170px -2175px; width:65px;height:110px;}
+     100% { background-position:  -590px -115px;width:75px;height:110px; } 
+}
+
+@keyframes jumping {
+    from { background-position: -35px -450px; }
+     to { background-position:  -567px -450px; }
+}
+
+
+@keyframes fireball {
+    from { background-position: -20px -3150px; }
+     to { background-position:  -130px -3150px; }
+}
+
+@keyframes explode {
+    from { background-position: -190px -3150px; }
+     to { background-position:  -407px -3150px; }
+}
+
+
+@keyframes idle {
+    from { background-position: -190px -115px; }
+     to { background-position:  -590px -115px; }
+}
+
+
+@keyframes ready {
+    from { background-position:   -15px -0px; }
+     to { background-position:  -612px -0px; }
+}
+
+@keyframes walkForward {
+    from { background-position:   -60px -225px; }
+     to { background-position:  -525px -225px; }
+}
+
+@keyframes walkBack {
+    from { background-position:   -60px -335px; }
+     to { background-position:  -525px -335px; }
+}
+
+
