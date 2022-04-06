@@ -127,7 +127,6 @@ class Sprite {
     kick(type = '') {
         console.log('下段踢');
         this.element.classList.add('kick' + type);
-        this.element.classList.remove('idle');
         this.currentMove = 'kick' + type;
         this.velocity.x = 0.05;
         setTimeout(() => {
