@@ -7,7 +7,6 @@ class Sprite {
         this.jumping = false;
         this.lastKey = '';
         this.draw();
-        this.currentMove = 'idle';
     }
 
     update() {
@@ -84,7 +83,6 @@ class Sprite {
     idle() {
         this.lastKey = '';
         this.velocity.x = 0;
-        this.currentMove = 'idle';
         this.element.className='ryu idle';
     }
     punch() {
@@ -98,7 +96,6 @@ class Sprite {
     punchM() {
         console.log('後手拳');
         this.element.classList.add('punchM');
-        this.element.classList.remove('idle');
         this.velocity.x = 0.05;
         setTimeout(() => {
             this.idle();
@@ -107,13 +104,9 @@ class Sprite {
     }
     dragonPunch() {
         console.log('昇龍拳');
-        this.element.classList.remove('idle');
         this.element.classList.add('dragonPunch');
-        this.currentMove = 'dragonPunch';
         setTimeout(() => {
-            //this.idle();
-            this.element.classList.remove('dragonPunch');
-            this.element.classList.add('idle');
+            this.idle();
             this.position.y=view.clientHeight-floorHeight-this.height();
         }, 550);
         setTimeout(() => {
@@ -126,9 +119,8 @@ class Sprite {
 
     }
     kick(type = '') {
-        console.log('下段踢');
+        console.log(type==''?'下段踢':'迴旋踢');
         this.element.classList.add('kick' + type);
-        this.currentMove = 'kick' + type;
         this.velocity.x = 0.05;
         setTimeout(() => {
             this.idle();

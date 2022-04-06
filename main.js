@@ -41,10 +41,10 @@ function animate() {
         }
     }
 
-    if (!keys.Alt.pressed && !keys.Ctrl.pressed && keys.a.pressed) {
+    if (!keys.Ctrl.pressed && keys.a.pressed) {
         player.punch();
     }
-    if (!keys.Alt.pressed && !keys.Ctrl.pressed && keys.s.pressed) {
+    if (!keys.Ctrl.pressed && keys.s.pressed) {
 
         player.punchM();
     }

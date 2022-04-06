@@ -1,5 +1,4 @@
 body{
-    /* position: relative; */
     margin:0;
 }
 .stage
@@ -28,14 +27,12 @@ body{
 
 .ryu{
     border:0px dashed red;
-    /* width:75px; */
     height:110px;
     margin:0;
     left:50px;
     display:block;
     position:relative;
     
-    /* background-image:url("./img/RyuCE.png");  */
     background-image:url("./img/RyuSFA3.gif");
     background-repeat:no-repeat;
     background-position: -170px -2200px; 
@@ -70,7 +67,6 @@ body{
 
 .ryu.punch{
     width:100px;
-    /* animation: punch 0.5s steps(3) infinite;    */
     animation: punch 0.35s steps(1) 1;   
 }
 
@@ -81,7 +77,6 @@ body{
 .ryu.dragonPunch
 {
     width:65px;
-    /* height:130px; */
     animation: dragonPunch 0.6s steps(1) 1;   
 }
 
@@ -113,7 +108,6 @@ body{
 }
 
 .fireball.explode{
-
     animation: explode 0.15s steps(3) infinite; 
 }
 
@@ -137,10 +131,6 @@ body{
 }
 
 @keyframes hadoken {
-    
-    /* from { background-position: -45px -1590px; }
-    to { background-position:  -465px -1590px; }  */
-    
     
     0% {
         background-position: -45px -1590px;background-repeat: no-repeat;
@@ -192,7 +182,6 @@ body{
     to { background-position: -530px -925px; width:100px;} 
 }
 
-
 @keyframes kickL {
     0% { background-position: -325px -1040px;width:80px; }
     18% { background-position: -405px -1040px; width:75px; }
@@ -228,13 +217,7 @@ body{
     to { background-position: -25px -810px;width:75px; }
 }
 
-
 @keyframes dragonPunch {
-
-    /* from { background-position: -10px -2175px; width:65px;height:130px;}
-    50% { background-position: -90px -2180px; width:65px;height:125px;}
-    75% { background-position: -170px -2200px; width:65px;height:105px; }
-    to { background-position:  -590px -115px;width:75px;height:110px; } */
 
      0% { background-position: -375px -2035px;width:80px;height:135px; } 
     16% { background-position: -455px -2035px; width:100px;height:135px; }
@@ -251,7 +234,6 @@ body{
      to { background-position:  -567px -450px; }
 }
 
-
 @keyframes fireball {
     from { background-position: -20px -3150px; }
      to { background-position:  -130px -3150px; }
@@ -262,12 +244,10 @@ body{
      to { background-position:  -407px -3150px; }
 }
 
-
 @keyframes idle {
     from { background-position: -190px -115px; }
      to { background-position:  -590px -115px; }
 }
-
 
 @keyframes ready {
     from { background-position:   -15px -0px; }
@@ -283,5 +263,3 @@ body{
     from { background-position:   -60px -335px; }
      to { background-position:  -525px -335px; }
 }
-
-
