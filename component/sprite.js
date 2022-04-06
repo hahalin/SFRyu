@@ -85,6 +85,7 @@ class Sprite {
         this.lastKey = '';
         this.velocity.x = 0;
         this.currentMove = 'idle';
+        this.element.className='ryu idle';
     }
     punch() {
         console.log('前手拳');
