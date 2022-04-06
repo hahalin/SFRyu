@@ -6,7 +6,7 @@ Use javascript and css to build a StreetFighter Ryu,walk,jump,basic punch kick,l
 [Demo](https://hahalin.github.io/SFRyu/)
 
 ## 運用的程式技術
-1. 運用了CSS animation+keyframes來達成出招，參考資料來源：<https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes>。
+1. 運用了CSS animation+keyframes來達成出招([參考資料來源](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes))。
 2. 運用了Javascript來偵測角色移動範圍設定場景的ScrollLeft，達成橫向卷軸移動舞台背景的效果，達成實際電玩相同的效果。
 3. 原本一開始搭JQuqery，為了後續計畫增加連線對打功能改用Pure Javascript。
  
