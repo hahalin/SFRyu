@@ -3,7 +3,7 @@ Use javascript and css to build a StreetFighter Ryu,walk,jump,basic punch kick,l
 
 因為小時候就很喜歡玩快打旋風，於是用Javascript,CSS設計一個快打旋風遊戲角色Ryu來娛樂一下，可以走動、跳、基本拳打腳踢、發氣功以及昇龍拳。
 
-### [Demo](https://hahalin.github.io/SFRyu/) {:target="_blank"} <-- 可以實際操作玩玩看唷
+### [Demo](https://hahalin.github.io/SFRyu/){:target="_blank"} <-- 可以實際操作玩玩看唷
 
 ## 運用的程式技術
 1. 運用了CSS animation+keyframes來達成出招([參考資料來源](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes))。
